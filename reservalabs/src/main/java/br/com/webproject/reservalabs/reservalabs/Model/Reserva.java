@@ -9,6 +9,8 @@ public class Reserva {
 	private String horarioDaReserva;
 	private String professorResponsavel;
 	private String status;
+	private String informacoesComplementares;
+	
 	public String getNomeDoLab() {
 		return nomeDoLab;
 	}
@@ -46,6 +48,12 @@ public class Reserva {
 	
 	public void setStatusFinalizado() {
 		this.status = "Finalizado";
-	}		
+	}
+	public String getInformacoesComplementares() {
+		return informacoesComplementares;
+	}
+	public void setInformacoesComplementares(String informacoesComplementares) {
+		this.informacoesComplementares = informacoesComplementares;
+	}	
 
 }

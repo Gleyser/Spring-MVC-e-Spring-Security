@@ -29,7 +29,7 @@ public class HelloController {
 		reserva.setHorarioDaReserva("07:00 - 11:00");
 		reserva.setProfessorResponsavel("Augusto");
 		reserva.setStatusPendente();
-		
+		reserva.setInformacoesComplementares("Aula do emprega mais");
 		List<Reserva> reservas = Arrays.asList(reserva);
 		
 		model.addAttribute("reservas", reservas);
