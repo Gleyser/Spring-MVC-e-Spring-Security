@@ -1,6 +1,7 @@
 package br.com.webproject.reservalabs.reservalabs.Model;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Reserva {
 	
@@ -17,8 +18,10 @@ public class Reserva {
 	public void setNomeDoLab(String nomeDoLab) {
 		this.nomeDoLab = nomeDoLab;
 	}
-	public LocalDate getDataDaReserva() {
-		return dataDaReserva;
+	
+	// Alterando aqui o formato que queremos que seja retornado
+	public String getDataDaReserva() {
+		return dataDaReserva.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 	}
 	public void setDataDaReserva(LocalDate dataDaReserva) {
 		this.dataDaReserva = dataDaReserva;
