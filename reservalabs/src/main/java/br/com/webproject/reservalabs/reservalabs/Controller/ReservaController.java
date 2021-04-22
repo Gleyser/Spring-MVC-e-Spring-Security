@@ -19,7 +19,7 @@ public class ReservaController {
 	@GetMapping("/reservas")
 	public String home(Model model) {
 		
-		List<Reserva> reservas = this.reservaRepository.retornaReservas();
+		List<Reserva> reservas = this.reservaRepository.findAll();
 		model.addAttribute("reservas", reservas);
 		return "reservas";
 	}
